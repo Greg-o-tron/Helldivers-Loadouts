@@ -11,7 +11,7 @@
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 import './shared-styles.js';
 
-class MyView1 extends PolymerElement {
+class LoadOutSelect extends PolymerElement {
   static get template() {
     return html`  <style>
                         html {
@@ -20,7 +20,7 @@ class MyView1 extends PolymerElement {
                         
                         body {
                           min-height: 100%;
-                          background-image: url("../img/background-small.jpg");
+                          background-image: url("../images/bg/background-small.jpg");
                           background-position: bottom;
                           background-repeat: no-repeat;
                           background-color: black;
@@ -279,7 +279,6 @@ class MyView1 extends PolymerElement {
                         }
                   </style>
                     <div class="player">
-                    <img class="topicon" src="svgo/header.svg" alt="Liber-Coffee"/>
                     <p class="gothic title">  Liber-Coffee  </p>
                     <p class="gothic subtitle">Helldivers loadout randomizer</p>
                     <p class="gothic">PERKS</p>
@@ -324,4 +323,4 @@ class MyView1 extends PolymerElement {
   }
 }
 
-window.customElements.define('my-view1', MyView1);
+window.customElements.define('loadout-select', LoadOutSelect);
