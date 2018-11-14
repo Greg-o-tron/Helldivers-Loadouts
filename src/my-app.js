@@ -46,7 +46,7 @@ class MyApp extends PolymerElement {
       }
     </style>
     <div>
-      <helldiver-icon name="thisissparta"> </helldiver-icon>
+    <helldiver-icon> </helldiver-icon>
     </div>
     `;
   }
