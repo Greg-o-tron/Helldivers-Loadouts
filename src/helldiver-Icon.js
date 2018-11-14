@@ -5,26 +5,37 @@ make it so you can make it different based on what you feed in via a *constructo
 
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 
-class Helldivericon extends PolymerElement
+class HelldiverIcon extends PolymerElement
 {
     static get template() {
         return html`
-        <style> 
-      
-          div{
-              background-image: url(${this.image});
-          }
-        </style>
-        <div>
-        </div>
+            <style>
+                div{
+                    height: 50px;
+                    width: 50px;
+                }
+            </style>
+            <div title="[[description]]" style="background-image: url([[image]])";>
+            </div>        
+            [[name]]
         `;
       }
       
+      constructor(){
+        super();
+        this.name = "default"
+        this.image = "images/races/bugs_header.png"
+        this.description = "not set"
+      }
+
       static get properties() {
         return {
             name: String,
-            image: String
+            image: String,
+            description: String
         };
       }
-
 }
+
+window.customElements.define('helldiver-icon', HelldiverIcon);
+

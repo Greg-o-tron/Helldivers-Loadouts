@@ -22,6 +22,7 @@ import '@polymer/iron-pages/iron-pages.js';
 import '@polymer/iron-selector/iron-selector.js';
 import '@polymer/paper-icon-button/paper-icon-button.js';
 import './my-icons.js';
+import './helldiver-Icon.js';
 import './LoadOutSelect.js';
 
 // Gesture events like tap and track generated from touch will not be
@@ -42,11 +43,10 @@ class MyApp extends PolymerElement {
         display: block;
       }
       div{
-          background-image: url("../images/bg/background-medium.jpg");
       }
     </style>
     <div>
-      <loadout-select> </loadout-select>
+      <helldiver-icon name="thisissparta"> </helldiver-icon>
     </div>
     `;
   }
